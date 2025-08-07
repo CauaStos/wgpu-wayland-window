@@ -1,0 +1,13 @@
+[package]
+name = "wgpu-wayland-window"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+env_logger = "0.11.8"
+pollster = "0.4.0"
+raw-window-handle = "0.6.2"
+wayland-backend = { version = "0.3.10", features = ["client_system", "rwh_06"] }
+wayland-client = "0.31.10"
+wayland-protocols = { version = "0.32.8", features = ["client"] }
+wgpu = "26.0.1"
